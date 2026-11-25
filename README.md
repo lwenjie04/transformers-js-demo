@@ -11,6 +11,16 @@
 
 **技术栈**：Transformers.js v3.8.1 · ONNX Runtime Web · WebGPU / WASM · 原生 HTML/CSS/JS（零构建、单文件页面）
 
+## 截图
+
+| Transformers.js 版（index.html） | WebLLM 对照版（webllm.html） |
+|---|---|
+| ![index](docs/screenshots/01-home.png) | ![webllm](docs/screenshots/02-webllm.png) |
+
+**本地知识库问答（rag.html）**
+
+![rag](docs/screenshots/03-rag.png)
+
 ## 功能
 
 | 功能 | 模型 | 说明 |
@@ -118,12 +128,3 @@ transformers-js-demo/
 ~~~
 
 ## 已知限制与后续方向
-
-- 模型下载体积受量化方式影响；对话模型首次加载较慢；
-- 移动端内存与算力有限，长上下文容易 OOM；
-- WebGPU 在部分设备/浏览器不可用，依赖 WASM 回退；
-- 后续可做：Service Worker 预缓存、Web Worker 隔离推理、多模型并发调度、RAG 检索增强示例。
-
-## License
-
-MIT。模型版权归 HuggingFace 上对应模型作者所有，本仓库仅做调用演示。
