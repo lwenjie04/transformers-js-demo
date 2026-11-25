@@ -5,3 +5,5 @@ node_modules/
 Thumbs.db
 .DS_Store
 本地预览.cmd
+
+一键推送到GitHub.cmd
